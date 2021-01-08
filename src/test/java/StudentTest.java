@@ -1,14 +1,5 @@
 import org.junit.Test;
 
-import java.util.ArrayList;
-
-import static org.junit.Assert.*;
-
-public class StudentTest {
-    @Test
-    public void testCreateStudent(){
-        Student fer = new Student(1L, "fer");
-        Student ryan = null;
         assertNull(ryan);
         assertNotNull(fer);
     }
@@ -22,8 +13,6 @@ public class StudentTest {
     }
 
 
-    @Test
-    public void testAddGrade(){
         Student fer = new Student(1L, "fer");
         fer.addGrade(100);
         assertSame(100, fer.getGrades().get(0));
@@ -38,4 +27,4 @@ public class StudentTest {
         fer.addGrade(80);
         assertEquals(90, fer.getGradeAverage(), 0);
     }
-}
+
